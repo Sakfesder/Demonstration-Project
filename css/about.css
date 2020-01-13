@@ -1,0 +1,95 @@
+/* Уневерсальный селектор(Все элементы страницы)*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background: #333;
+  color: #fff;
+  height: 100vh;/*Css3-значение вычисляется напрямую относительно окна браузера*/
+  line-height: 1.6;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  /* Умная прокрутка Scroll Snap */
+  overflow-y: scroll; /* Управляет отображением содержания блочного элемента по вертикали:Всегда добавляется вертикальная полоса прокрутки; */
+  scroll-behavior: smooth; /* Определяет поведение прокрутки внутри элемента: Прокрутка происходит плавно. Время и функция перехода устанавливаются непосредственно браузером; */
+  scroll-snap-type: y mandatory; /* Определяет насколько точно проматываемый контент должен выравниваться относительно родительского элемента */
+}
+
+.text {
+  font-size: 1.5rem;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background: rgba(0,0,0,0.5);
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: center;
+}
+
+.navbar ul li {
+  margin: 0 1rem;
+  padding: 1rem;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #f4f4f4;
+}
+
+.navbar ul li a:hover {
+  color: skyblue;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;/*Css3-значение вычисляется напрямую относительно окна браузера*/
+  /* Умная прокрутка */
+  scroll-snap-align: center; /* Центральное выравнивание */
+}
+
+section h1 {
+  font-size: 4rem;
+}
+
+section h2 {
+  font-size: 2rem;
+}
+
+#home {
+  background: url('https://images.pexels.com/photos/3171592/pexels-photo-3171592.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') no-repeat center center/cover;;
+}
+
+#about {
+  background: url('https://images.pexels.com/photos/2627063/pexels-photo-2627063.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') no-repeat center center/cover;;
+}
+
+#service {
+  background: url('https://images.pexels.com/photos/2591276/pexels-photo-2591276.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') no-repeat center center/cover;;
+}
+
+#contact {
+  background: url('https://images.pexels.com/photos/3006223/pexels-photo-3006223.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') no-repeat center center/cover;;
+}

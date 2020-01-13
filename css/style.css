@@ -1,0 +1,183 @@
+html, body {
+  padding:0;
+  margin:0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+h1, h2 {
+  font-size: 4rem;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.btn {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  height: 3rem;
+  padding-top: 0.4rem;
+  width: 15rem;
+  color: #fff;
+  border: #fff solid 0.2rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transform: translateX(-50%);
+}
+
+.split.left .btn:hover {
+  background-color: rgba(255, 255, 224, .3 );
+  border-color: rgba(255, 255, 224, .3);
+}
+
+.split.right .btn:hover {
+  background-color: rgba(47, 79, 79, .3);
+  border-color: rgba(47, 79, 79, .3);
+}
+
+.container-fluid {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgb(43, 41, 41);
+}
+
+.split {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.split.left {
+  left: 0;
+  background-size: cover;
+}
+
+.split.left {
+  background-image: url('/img/city.jpg');
+  background-size: cover;
+}
+
+.split.right {
+  right:0;
+  background: url('https://images.pexels.com/photos/799443/pexels-photo-799443.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') center center no-repeat;
+  background-size: cover;
+}
+
+.split.left, .split.right {
+  transition: 1000ms all ease-in-out;
+}
+
+.hover-left .left {
+  width: 69%;
+}
+
+.hover-left .right {
+  width: 31%;
+}
+
+.hover-right .right {
+  width: 69%;
+}
+
+.hover-right .left {
+  width: 31%;
+}
+
+.icon li a {
+  font-size: 28px;
+  color: #FFF;  
+  margin-left: 10px;
+}
+
+.icon li a:hover {
+  color: #800000;
+  transition: 0.8s ease-out;
+}
+
+.icon ul {
+  list-style: none;
+  transform: translateX(-70%);
+  position: absolute;
+  top: 90%;
+  left: 25%;
+  white-space: nowrap;
+}
+
+.icon li {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.video-container {
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+}
+
+.video-container video.fillWidth {
+  width: 300%;
+  position: absolute;
+}
+
+
+@media(max-width: 768px) {
+
+  h1, h2 {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    height: 2rem;
+    padding-top: 0.4rem;
+    width: 6rem;
+    font-size: 0.6rem;
+  }
+
+  .icon li a {
+    font-size: 10px;
+    margin-left: 3px;
+  }
+
+  .icon ul {
+    left: 40%;
+    top: 90%;
+    position: absolute;
+  }
+}
+
+@media(max-width: 1024px) {
+  h1  {
+    color: rgb(54, 50, 50);
+  }
+
+  #btnOne {
+    color: rgb(54, 50, 50);
+    border: rgb(54, 50, 50) solid 0.2rem;
+  }
+
+  .icon ul {
+    left: 45%;
+    top: 90%;
+    position: absolute;
+  }
+}
+
+
+
+
+
+
+
+
+
